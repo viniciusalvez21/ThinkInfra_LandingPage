@@ -1,0 +1,261 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+.animated-gradient-bg {
+    background: linear-gradient(-45deg, #1A1229, #211436, #1A1229, #0D1117);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #38BDF8, #a38cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Estilos para o fundo do cabeçalho */
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Estilos para a animação de fundo da Hero */
+#hero-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5; /* Atrás do texto (z-10), mas na frente do fundo */
+}
+
+
+/* --- Estilos para o Roadmap (Metodologia) --- */
+.roadmap-container {
+    position: relative;
+}
+
+/* A linha vertical do tempo */
+.roadmap-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-image: linear-gradient(to bottom, #38BDF8, #8B5CF6);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-radius: 4px;
+}
+
+/* Container para cada item do roadmap */
+.roadmap-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: transparent;
+    width: 50%;
+}
+
+/* O ponto na linha do tempo */
+.roadmap-item .roadmap-dot {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #161B22; /* surface color */
+    border: 4px solid #8B5CF6; /* accent-purple */
+    top: 25px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Posiciona os itens da esquerda */
+.roadmap-item:nth-child(odd) {
+    left: 0;
+}
+
+/* Posiciona os itens da direita */
+.roadmap-item:nth-child(even) {
+    left: 50%;
+}
+
+/* A seta (triângulo) para os itens da esquerda */
+.roadmap-item:nth-child(odd)::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 28px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #161B22; /* surface color */
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #161B22;
+}
+
+/* A seta (triângulo) para os itens da direita */
+.roadmap-item:nth-child(even)::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 28px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #161B22; /* surface color */
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #161B22 transparent transparent;
+}
+
+/* O ponto para os itens da direita */
+.roadmap-item:nth-child(even) .roadmap-dot {
+    left: -10px;
+}
+
+/* O conteúdo do card */
+.roadmap-content {
+    padding: 20px 30px;
+    background-color: #161B22; /* surface color */
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #161B22;
+    transition: border-color 0.3s ease;
+}
+
+.roadmap-content:hover {
+    border-color: #8B5CF6;
+}
+
+/* --- Estilos para a Seção de Tecnologias --- */
+.tech-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A0AEC0; /* secondary-text */
+    transition: all 0.3s ease;
+}
+
+.tech-logo:hover {
+    color: #E2E8F0; /* primary-text */
+    transform: scale(1.1);
+}
+
+/* --- Estilos para o Modal --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 998;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    background-color: #161B22; /* surface color */
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 600px;
+    z-index: 999;
+    border: 1px solid #2E1C4B; /* Roxo profundo */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-box.hidden, .modal-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-box.hidden {
+    transform: translate(-50%, -50%) scale(0.95);
+}
+.modal-box:not(.hidden) {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+#modal-item-list li {
+    display: flex;
+    align-items: flex-start;
+}
+
+#modal-item-list li::before {
+    content: '✓';
+    color: #38BDF8; /* accent-blue */
+    margin-right: 0.75rem;
+    font-weight: bold;
+    margin-top: 0.125rem;
+}
+
+#modal-item-list li strong {
+    color: #E2E8F0; /* primary-text */
+    font-weight: 600; 
+}
+
+
+/* Media Query para telas de celular */
+@media screen and (max-width: 768px) {
+    .roadmap-container::after {
+        left: 31px;
+    }
+    .roadmap-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .roadmap-item:nth-child(even) {
+        left: 0%;
+    }
+    .roadmap-item::before {
+        left: 60px;
+        border: medium solid #161B22;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #161B22 transparent transparent;
+    }
+    .roadmap-item .roadmap-dot {
+        left: 21px;
+    }
+    .roadmap-content {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .modal-box {
+        padding: 1.5rem;
+    }
+}

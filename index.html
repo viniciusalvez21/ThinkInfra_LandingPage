@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkInfra | Infraestrutura Inteligente</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link para seu arquivo CSS principal -->
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="bg-background text-primary-text font-sans antialiased">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-background/70 backdrop-blur-lg sticky top-0 z-50 border-b border-surface">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold gradient-text">ThinkInfra</h1>
+            <nav class="hidden md:flex space-x-8 text-secondary-text">
+                <a href="#solucoes" class="hover:text-accent-blue transition-colors duration-300">Soluções</a>
+                <a href="#metodologia" class="hover:text-accent-blue transition-colors duration-300">Metodologia</a>
+                <a href="#contato" class="hover:text-accent-blue transition-colors duration-300">Contato</a>
+            </nav>
+            <a href="#contato" class="bg-gradient-to-r from-accent-blue to-accent-purple text-white font-bold py-2 px-6 rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:scale-105">
+                Fale Conosco
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="animated-gradient-bg relative overflow-hidden">
+            <canvas id="hero-canvas"></canvas>
+            <div class="container mx-auto px-6 py-32 md:py-48 text-center relative z-10">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-white">
+                    Infraestrutura que <span class="gradient-text">Pensa.</span> <br> Resultados que <span class="gradient-text">Impressionam.</span>
+                </h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-secondary-text">Nós pensamos na complexidade da sua infraestrutura de para que você possa focar em pensar no seu negócio.</p>
+                <a href="#solucoes" class="bg-gradient-to-r from-accent-blue to-accent-purple text-white font-bold py-4 px-10 rounded-lg text-lg hover:opacity-90 transition-opacity duration-300 transform hover:scale-105 shadow-lg shadow-accent-blue/20">
+                    Conheça Nossas Soluções
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Soluções -->
+        <section id="solucoes" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-3xl font-bold mb-4 text-primary-text">Pensando à Frente: <span class="gradient-text">Nossas Soluções de Infraestrutura</span></h3>
+                <p class="text-secondary-text max-w-2xl mx-auto mb-12">Pilares tecnológicos para a inovação e eficiência da sua empresa.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1: Arquitetura de Servidores -->
+                    <div class="service-card bg-surface p-8 rounded-xl border border-transparent hover:border-primary-text/20 hover:bg-surface/50 hover:backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+                         data-modal-title="Arquitetura de Servidores Robusta"
+                         data-modal-description="A base da sua operação digital precisa ser sólida e inteligente. Analisamos suas necessidades para configurar soluções sob medida, seja em servidores locais (on-premise) ou na nuvem, garantindo que sua infraestrutura suporte o crescimento do seu negócio hoje e no futuro."
+                         data-modal-items='["Configuração de servidores Windows e Linux","Virtualização para otimização de recursos (VMWare, Hyper-V)","Implementação de políticas de segurança e backup","Monitoramento de performance e disponibilidade"]'>
+                        <div class="mb-4 inline-block p-3 rounded-lg bg-background">
+                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <defs><linearGradient id="icon-gradient-server" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#38BDF8;" /><stop offset="100%" style="stop-color:#8B5CF6;" /></linearGradient></defs>
+                                <path stroke="url(#icon-gradient-server)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-white">Arquitetura de Servidores Robusta</h4>
+                        <p class="text-secondary-text">Projetamos e implementamos a espinha dorsal do seu negócio, com servidores otimizados para máxima performance, segurança e escalabilidade.</p>
+                    </div>
+
+                    <!-- Card 2: Conectividade e Redes -->
+                    <div class="service-card bg-surface p-8 rounded-xl border border-transparent hover:border-primary-text/20 hover:bg-surface/50 hover:backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+                         data-modal-title="Conectividade Inteligente e Segura"
+                         data-modal-description="Planejamos e implementamos sua infraestrutura de rede para que sua equipe possa colaborar sem interrupções. Do cabeamento estruturado à configuração de redes Wi-Fi corporativas e firewalls, garantimos que sua conectividade seja uma vantagem competitiva."
+                         data-modal-items='["Projeto e implementação de redes cabeadas e Wi-Fi","Configuração de Switches, Roteadores e Firewalls (Cisco, Fortinet)","Segmentação de rede para maior segurança (VLANs)","Soluções de VPN para acesso remoto seguro"]'>
+                        <div class="mb-4 inline-block p-3 rounded-lg bg-background">
+                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <defs><linearGradient id="icon-gradient-network" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#38BDF8;" /><stop offset="100%" style="stop-color:#8B5CF6;" /></linearGradient></defs>
+                                <path stroke="url(#icon-gradient-network)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.862 13.014 9 12.657 9 12c0-1.657-1.343-3-3-3S3 10.343 3 12c0 .657.138 1.014.316 1.342m5.368 0a3 3 0 115.368 0M12 9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm6.684 4.342C18.862 13.014 19 12.657 19 12c0-1.657-1.343-3-3-3s-3 1.343-3 3c0 .657.138 1.014.316 1.342m5.368 0a3 3 0 115.368 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-white">Conectividade Inteligente e Segura</h4>
+                        <p class="text-secondary-text">Construímos o sistema nervoso da sua empresa com redes de alta performance que garantem um fluxo de dados rápido, estável e protegido contra ameaças.</p>
+                    </div>
+
+                    <!-- Card 3: Consultoria Estratégica -->
+                    <div class="service-card bg-surface p-8 rounded-xl border border-transparent hover:border-primary-text/20 hover:bg-surface/50 hover:backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+                         data-modal-title="Consultoria Estratégica de TI"
+                         data-modal-description="Atuamos como seu parceiro estratégico (CTO as a service) para analisar seu ambiente, entender seus desafios e traduzir tudo isso em um plano de ação tecnológico que trará resultados reais, otimizando custos e impulsionando a inovação."
+                         data-modal-items='["Diagnóstico completo do ambiente de TI (IT Assessment)","Planejamento de orçamento e otimização de custos (TCO)","Roadmap de projetos e inovação tecnológica","Apoio na seleção de fornecedores e soluções de software/hardware"]'>
+                        <div class="mb-4 inline-block p-3 rounded-lg bg-background">
+                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <defs><linearGradient id="icon-gradient-consulting" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#38BDF8;" /><stop offset="100%" style="stop-color:#8B5CF6;" /></linearGradient></defs>
+                                <path stroke="url(#icon-gradient-consulting)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-white">Consultoria Estratégica de TI</h4>
+                        <p class="text-secondary-text">Alinhamos a tecnologia aos seus objetivos de negócio, criando um roadmap claro para o crescimento, otimização de custos e inovação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Metodologia - Estilo Roadmap -->
+        <section id="metodologia" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20">
+                    <p class="gradient-text font-semibold mb-4">NOSSA METODOLOGIA</p>
+                    <h3 class="text-3xl font-bold text-white">Da Análise à Excelência: Um Processo Transparente</h3>
+                </div>
+                
+                <div class="relative roadmap-container">
+                    <!-- A linha do tempo será um pseudo-elemento no CSS -->
+
+                    <!-- Passo 1 -->
+                    <div class="roadmap-item">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-content">
+                            <span class="text-sm font-bold gradient-text">PASSO 1</span>
+                            <h4 class="text-xl font-bold text-white mb-2">Diagnóstico e Estratégia</h4>
+                            <p class="text-secondary-text">Mergulhamos fundo no seu ambiente para entender seus desafios e objetivos. Aqui, desenhamos um roadmap tecnológico alinhado ao seu negócio.</p>
+                        </div>
+                    </div>
+
+                    <!-- Passo 2 -->
+                    <div class="roadmap-item">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-content">
+                            <span class="text-sm font-bold gradient-text">PASSO 2</span>
+                            <h4 class="text-xl font-bold text-white mb-2">Implementação Sob Medida</h4>
+                            <p class="text-secondary-text">Executamos o plano com precisão, implementando as soluções de servidores, redes e segurança com o mínimo de impacto na sua operação diária.</p>
+                        </div>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="roadmap-item">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-content">
+                            <span class="text-sm font-bold gradient-text">PASSO 3</span>
+                            <h4 class="text-xl font-bold text-white mb-2">Validação e Otimização</h4>
+                            <p class="text-secondary-text">Após a implementação, validamos cada detalhe para garantir que tudo funcione perfeitamente e otimizamos o sistema para máxima performance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Passo 4 -->
+                    <div class="roadmap-item">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-content">
+                            <span class="text-sm font-bold gradient-text">PASSO 4</span>
+                            <h4 class="text-xl font-bold text-white mb-2">Evolução Contínua</h4>
+                            <p class="text-secondary-text">Oferecemos suporte proativo e acompanhamos sua evolução, garantindo que sua infraestrutura continue sendo um ativo estratégico para o seu crescimento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Tecnologias -->
+        <section id="tecnologias" class="py-20 bg-background">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-3xl font-bold text-white mb-4">Tecnologias de Ponta</h3>
+                <p class="text-secondary-text max-w-2xl mx-auto mb-12">Trabalhamos com as ferramentas líderes de mercado para garantir soluções robustas, seguras e inovadoras.</p>
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 items-center">
+                    <!-- Logo 1: Microsoft -->
+                    <div class="tech-logo" title="Microsoft">
+                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M11.4 21.9H2.1V12.6h9.3v9.3zm0-11.4H2.1V2.1h9.3v8.4zm10.5 11.4H12.6V12.6h9.3v9.3zm0-11.4H12.6V2.1h9.3v8.4z"/></svg>
+                    </div>
+                    <!-- Logo 2: Linux -->
+                    <div class="tech-logo" title="Linux">
+                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12.4 12.3c.5-1.9.5-3.5 0-4.6-.2-.5-.5-1-.9-1.3-.4-.4-.9-.7-1.4-.8-1.1-.3-2.6-.3-3.7 0-.5.1-1 .4-1.4.8-.4.4-.7.8-.9 1.3-.5 1.1-.5 2.7 0 4.6.2.8.6 1.5 1.2 2.1.6.6 1.3 1 2.1 1.2.5.1 1 .2 1.5.2s1.1-.1 1.5-.2c.8-.2 1.5-.6 2.1-1.2.6-.6 1-1.3 1.2-2.1zm-3.3 2.1c-.3.1-.7.1-1 0-.3-.1-.6-.2-.9-.5-.3-.3-.5-.6-.6-.9-.1-.3-.1-.7 0-1 .1-.3.2-.6.5-.9.3-.3.6-.5.9-.6.3-.1.7-.1 1 0 .3.1.6.2.9.5.3.3.5.6.6.9.1.3.1.7 0 1-.1.3-.2.6-.5.9-.2.3-.5.5-.8.6zM21.9 9.6c-.2-.5-.5-1-.9-1.4-.4-.4-.9-.7-1.4-.8-1.1-.3-2.6-.3-3.7 0-.5.1-1 .4-1.4.8-.4.4-.7.8-.9 1.3-.5 1.1-.5 2.7 0 4.6.2.8.6 1.5 1.2 2.1.6.6 1.3 1 2.1 1.2.5.1 1 .2 1.5.2s1.1-.1 1.5-.2c.8-.2 1.5-.6 2.1-1.2.6-.6 1-1.3 1.2-2.1.5-1.9.5-3.5 0-4.6z"/></svg>
+                    </div>
+                    <!-- Logo 3: AWS -->
+                    <div class="tech-logo" title="Amazon Web Services">
+                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M16.1 14.8c.4-.3.7-.8.7-1.3 0-.6-.3-1.1-.8-1.4-.5-.3-1.1-.4-1.8-.4h-1.5v3.5h1.6c.6 0 1.2-.1 1.8-.4zM20.9 8.9c-1.3-1-3.1-1.5-5.3-1.5h-5.3v10.1h5.5c2.1 0 3.8-.5 5.1-1.6 1.3-1.1 2-2.7 2-4.8.1-2.1-.6-3.7-1.7-4.7zM18.8 12c0 1.4-.5 2.5-1.5 3.3-.9.8-2.2 1.2-3.8 1.2h-2.1V7.4h2.1c1.6 0 2.9.4 3.8 1.2.9.8 1.5 1.9 1.5 3.4zM3.1 17.5V6.4h2.3v8.8l4.4-8.8h2.6L7.9 14v3.5H3.1z"/></svg>
+                    </div>
+                    <!-- Logo 4: Cisco -->
+                    <div class="tech-logo" title="Cisco">
+                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.1c-5.5 0-9.9 4.4-9.9 9.9s4.4 9.9 9.9 9.9 9.9-4.4 9.9-9.9S17.5 2.1 12 2.1zM8.4 17.6V6.4h1.9v11.1H8.4zm5.3 0V6.4h1.9v11.1h-1.9zM6.4 13.7V12h11.1v1.7H6.4zM6.4 10.3V8.6h11.1v1.7H6.4z"/></svg>
+                    </div>
+                    <!-- Logo 5: VMWare -->
+                    <div class="tech-logo" title="VMWare">
+                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.1L.9 8.4v7.2l11.1 6.3 11.1-6.3V8.4L12 2.1zm8.8 13.3l-8.8 5-8.8-5V9.2l8.8-5 8.8 5v6.2zM12 12.6l-4.4-2.5v-5l4.4 2.5v5zm0 0l4.4-2.5v-5l-4.4 2.5v5zm0 0l-4.4 2.5v5l4.4-2.5v-5zm0 0l4.4 2.5v5l-4.4-2.5v-5z"/></svg>
+                    </div>
+                    <!-- Logo 6: Fortinet -->
+                    <div class="tech-logo" title="Fortinet">
+                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.1L.9 8.4v7.2l11.1 6.3 11.1-6.3V8.4L12 2.1zM12 19.8l-8.8-5V9.2l8.8 5v5.6zm0-7.2l-8.8-5 8.8-5 8.8 5-8.8 5z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Final de CTA -->
+        <section id="contato" class="py-20 animated-gradient-bg">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-white">Pronto para ter uma infraestrutura que pensa?</h3>
+                <p class="text-secondary-text max-w-2xl mx-auto mb-8">Vamos agendar uma conversa para entender seus desafios e desenhar uma solução tecnológica que coloque sua empresa à frente da concorrência.</p>
+                <a href="mailto:contato@thinkinfra.com.br" class="bg-gradient-to-r from-accent-blue to-accent-purple text-white font-bold py-4 px-10 rounded-lg text-lg hover:opacity-90 transition-opacity duration-300 transform hover:scale-105 shadow-lg shadow-accent-blue/20">
+                    Agende uma Conversa Estratégica
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-background border-t border-surface py-8">
+        <div class="container mx-auto px-6 text-center text-secondary-text">
+            <p>&copy; 2025 ThinkInfra. Todos os direitos reservados.</p>
+            <p class="text-sm">Infraestrutura Inteligente.</p>
+        </div>
+    </footer>
+    
+    <!-- Estrutura do Modal (Pop-up) -->
+    <div id="service-modal-overlay" class="modal-overlay hidden"></div>
+    <div id="service-modal" class="modal-box hidden">
+        <button id="modal-close-btn" class="absolute top-4 right-4 text-secondary-text hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <h3 id="modal-title" class="text-2xl font-bold gradient-text mb-4"></h3>
+        <p id="modal-description" class="text-secondary-text mb-6"></p>
+        <h4 class="text-lg font-semibold text-white mb-3">Principais Entregas:</h4>
+        <ul id="modal-item-list" class="space-y-2">
+            <!-- Itens da lista serão inseridos aqui pelo JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Script principal do Vite -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
