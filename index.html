@@ -33,12 +33,11 @@
     <main>
         <!-- Seção Hero -->
         <section class="animated-gradient-bg relative overflow-hidden">
-            <canvas id="hero-canvas"></canvas>
             <div class="container mx-auto px-6 py-32 md:py-48 text-center relative z-10">
                 <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-white">
                     Infraestrutura que <span class="gradient-text">Pensa.</span> <br> Resultados que <span class="gradient-text">Impressionam.</span>
                 </h2>
-                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-secondary-text">Nós pensamos na complexidade da sua infraestrutura de para que você possa focar em pensar no seu negócio.</p>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-secondary-text">Nós pensamos na complexidade da sua infraestrutura para que você possa focar em pensar no seu negócio.</p>
                 <a href="#solucoes" class="bg-gradient-to-r from-accent-blue to-accent-purple text-white font-bold py-4 px-10 rounded-lg text-lg hover:opacity-90 transition-opacity duration-300 transform hover:scale-105 shadow-lg shadow-accent-blue/20">
                     Conheça Nossas Soluções
                 </a>
@@ -56,7 +55,7 @@
                     <div class="service-card bg-surface p-8 rounded-xl border border-transparent hover:border-primary-text/20 hover:bg-surface/50 hover:backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
                          data-modal-title="Arquitetura de Servidores Robusta"
                          data-modal-description="A base da sua operação digital precisa ser sólida e inteligente. Analisamos suas necessidades para configurar soluções sob medida, seja em servidores locais (on-premise) ou na nuvem, garantindo que sua infraestrutura suporte o crescimento do seu negócio hoje e no futuro."
-                         data-modal-items='["Configuração de servidores Windows e Linux","Virtualização para otimização de recursos (VMWare, Hyper-V)","Implementação de políticas de segurança e backup","Monitoramento de performance e disponibilidade"]'>
+                         data-modal-items='["Configuração de servidores <strong>Windows</strong> e <strong>Linux</strong>","<strong>Virtualização</strong> para otimização de recursos (<strong>VMWare</strong>, <strong>Hyper-V</strong>)","Implementação de políticas de <strong>segurança</strong> e <strong>backup</strong>","<strong>Monitoramento</strong> de performance e disponibilidade"]'>
                         <div class="mb-4 inline-block p-3 rounded-lg bg-background">
                             <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <defs><linearGradient id="icon-gradient-server" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#38BDF8;" /><stop offset="100%" style="stop-color:#8B5CF6;" /></linearGradient></defs>
@@ -69,30 +68,31 @@
 
                     <!-- Card 2: Conectividade e Redes -->
                     <div class="service-card bg-surface p-8 rounded-xl border border-transparent hover:border-primary-text/20 hover:bg-surface/50 hover:backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
-                         data-modal-title="Conectividade Inteligente e Segura"
-                         data-modal-description="Planejamos e implementamos sua infraestrutura de rede para que sua equipe possa colaborar sem interrupções. Do cabeamento estruturado à configuração de redes Wi-Fi corporativas e firewalls, garantimos que sua conectividade seja uma vantagem competitiva."
-                         data-modal-items='["Projeto e implementação de redes cabeadas e Wi-Fi","Configuração de Switches, Roteadores e Firewalls (Cisco, Fortinet)","Segmentação de rede para maior segurança (VLANs)","Soluções de VPN para acesso remoto seguro"]'>
-                        <div class="mb-4 inline-block p-3 rounded-lg bg-background">
-                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="icon-gradient-network" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#38BDF8;" /><stop offset="100%" style="stop-color:#8B5CF6;" /></linearGradient></defs>
-                                <path stroke="url(#icon-gradient-network)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.862 13.014 9 12.657 9 12c0-1.657-1.343-3-3-3S3 10.343 3 12c0 .657.138 1.014.316 1.342m5.368 0a3 3 0 115.368 0M12 9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm6.684 4.342C18.862 13.014 19 12.657 19 12c0-1.657-1.343-3-3-3s-3 1.343-3 3c0 .657.138 1.014.316 1.342m5.368 0a3 3 0 115.368 0z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2 text-white">Conectividade Inteligente e Segura</h4>
-                        <p class="text-secondary-text">Construímos o sistema nervoso da sua empresa com redes de alta performance que garantem um fluxo de dados rápido, estável e protegido contra ameaças.</p>
+                    data-modal-title="Conectividade Inteligente e Segura"
+                    data-modal-description="Planejamos e implementamos sua infraestrutura de rede para que sua equipe possa colaborar sem interrupções. Do cabeamento estruturado à configuração de redes Wi-Fi corporativas e firewalls, garantimos que sua conectividade seja uma vantagem competitiva."
+                    data-modal-items='["Projeto de redes cabeadas e Wi-Fi", "Configuração de Switches, Roteadores e Firewalls (Cisco, Fortinet)", "Segmentação de rede para maior segurança (VLANs)", "Soluções de VPN para acesso remoto seguro"]'>
+                   
+                    <div class="mb-4 inline-block p-3 rounded-lg bg-background">
+                        <img src="public/network.svg" class="w-8 h-8" alt="Ícone de rede">
                     </div>
+               
+                   <h4 class="text-xl font-bold mb-2 text-white">Conectividade Inteligente e Segura</h4>
+                   
+                   <p class="text-secondary-text">Projetamos redes de alta performance, garantindo um fluxo de dados rápido, estável e seguro para sua empresa.</p>
+               
+               </div>
 
-                    <!-- Card 3: Consultoria Estratégica -->
-                    <div class="service-card bg-surface p-8 rounded-xl border border-transparent hover:border-primary-text/20 hover:bg-surface/50 hover:backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
-                         data-modal-title="Consultoria Estratégica de TI"
-                         data-modal-description="Atuamos como seu parceiro estratégico (CTO as a service) para analisar seu ambiente, entender seus desafios e traduzir tudo isso em um plano de ação tecnológico que trará resultados reais, otimizando custos e impulsionando a inovação."
-                         data-modal-items='["Diagnóstico completo do ambiente de TI (IT Assessment)","Planejamento de orçamento e otimização de custos (TCO)","Roadmap de projetos e inovação tecnológica","Apoio na seleção de fornecedores e soluções de software/hardware"]'>
-                        <div class="mb-4 inline-block p-3 rounded-lg bg-background">
-                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="icon-gradient-consulting" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#38BDF8;" /><stop offset="100%" style="stop-color:#8B5CF6;" /></linearGradient></defs>
-                                <path stroke="url(#icon-gradient-consulting)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
+               <div class="service-card bg-surface p-8 rounded-xl border border-transparent hover:border-primary-text/20 hover:bg-surface/50 hover:backdrop-blur-sm transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
+               data-modal-title="Consultoria Estratégica de TI"
+               data-modal-description="Atuamos como seu parceiro estratégico (CTO as a service) para analisar seu ambiente, entender seus desafios e traduzir tudo isso em um plano de ação tecnológico que trará resultados reais, otimizando custos e impulsionando a inovação."
+               data-modal-items='["Diagnóstico completo do ambiente de TI (IT Assessment)", "Planejamento de orçamento e otimização de custos (TCO)", "Roadmap de projetos e inovação tecnológica", "Apoio na seleção de fornecedores e soluções"]'>
+              
+              <div class="mb-4 inline-block p-3 rounded-lg bg-background">
+                  <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <defs><linearGradient id="icon-gradient-consulting" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#38BDF8;" /><stop offset="100%" style="stop-color:#8B5CF6;" /></linearGradient></defs>
+                      <path stroke="url(#icon-gradient-consulting)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+              </div>
                         <h4 class="text-xl font-bold mb-2 text-white">Consultoria Estratégica de TI</h4>
                         <p class="text-secondary-text">Alinhamos a tecnologia aos seus objetivos de negócio, criando um roadmap claro para o crescimento, otimização de custos e inovação.</p>
                     </div>
@@ -162,27 +162,27 @@
                 <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 items-center">
                     <!-- Logo 1: Microsoft -->
                     <div class="tech-logo" title="Microsoft">
-                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M11.4 21.9H2.1V12.6h9.3v9.3zm0-11.4H2.1V2.1h9.3v8.4zm10.5 11.4H12.6V12.6h9.3v9.3zm0-11.4H12.6V2.1h9.3v8.4z"/></svg>
+                        <img src="public/microsoft.svg" alt="Logo da Microsoft" class="w-16 h-16 mx-auto">
                     </div>
                     <!-- Logo 2: Linux -->
                     <div class="tech-logo" title="Linux">
-                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12.4 12.3c.5-1.9.5-3.5 0-4.6-.2-.5-.5-1-.9-1.3-.4-.4-.9-.7-1.4-.8-1.1-.3-2.6-.3-3.7 0-.5.1-1 .4-1.4.8-.4.4-.7.8-.9 1.3-.5 1.1-.5 2.7 0 4.6.2.8.6 1.5 1.2 2.1.6.6 1.3 1 2.1 1.2.5.1 1 .2 1.5.2s1.1-.1 1.5-.2c.8-.2 1.5-.6 2.1-1.2.6-.6 1-1.3 1.2-2.1zm-3.3 2.1c-.3.1-.7.1-1 0-.3-.1-.6-.2-.9-.5-.3-.3-.5-.6-.6-.9-.1-.3-.1-.7 0-1 .1-.3.2-.6.5-.9.3-.3.6-.5.9-.6.3-.1.7-.1 1 0 .3.1.6.2.9.5.3.3.5.6.6.9.1.3.1.7 0 1-.1.3-.2.6-.5.9-.2.3-.5.5-.8.6zM21.9 9.6c-.2-.5-.5-1-.9-1.4-.4-.4-.9-.7-1.4-.8-1.1-.3-2.6-.3-3.7 0-.5.1-1 .4-1.4.8-.4.4-.7.8-.9 1.3-.5 1.1-.5 2.7 0 4.6.2.8.6 1.5 1.2 2.1.6.6 1.3 1 2.1 1.2.5.1 1 .2 1.5.2s1.1-.1 1.5-.2c.8-.2 1.5-.6 2.1-1.2.6-.6 1-1.3 1.2-2.1.5-1.9.5-3.5 0-4.6z"/></svg>
+                        <img src="public/linux.svg" alt="Logo do Linux" class="w-16 h-16 mx-auto">
                     </div>
                     <!-- Logo 3: AWS -->
-                    <div class="tech-logo" title="Amazon Web Services">
-                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M16.1 14.8c.4-.3.7-.8.7-1.3 0-.6-.3-1.1-.8-1.4-.5-.3-1.1-.4-1.8-.4h-1.5v3.5h1.6c.6 0 1.2-.1 1.8-.4zM20.9 8.9c-1.3-1-3.1-1.5-5.3-1.5h-5.3v10.1h5.5c2.1 0 3.8-.5 5.1-1.6 1.3-1.1 2-2.7 2-4.8.1-2.1-.6-3.7-1.7-4.7zM18.8 12c0 1.4-.5 2.5-1.5 3.3-.9.8-2.2 1.2-3.8 1.2h-2.1V7.4h2.1c1.6 0 2.9.4 3.8 1.2.9.8 1.5 1.9 1.5 3.4zM3.1 17.5V6.4h2.3v8.8l4.4-8.8h2.6L7.9 14v3.5H3.1z"/></svg>
+                    <div class="tech-logo" title="Proxmox">
+                        <img src="public/proxmox.svg" alt="Logo do Proxmox" class="w-16 h-16 mx-auto">
                     </div>
                     <!-- Logo 4: Cisco -->
-                    <div class="tech-logo" title="Cisco">
-                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.1c-5.5 0-9.9 4.4-9.9 9.9s4.4 9.9 9.9 9.9 9.9-4.4 9.9-9.9S17.5 2.1 12 2.1zM8.4 17.6V6.4h1.9v11.1H8.4zm5.3 0V6.4h1.9v11.1h-1.9zM6.4 13.7V12h11.1v1.7H6.4zM6.4 10.3V8.6h11.1v1.7H6.4z"/></svg>
+                    <div class="tech-logo" title="Unifi">
+                        <img src="public/unifi.svg" alt="Logo do Unifi" class="w-16 h-16 mx-auto">
                     </div>
                     <!-- Logo 5: VMWare -->
                     <div class="tech-logo" title="VMWare">
-                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.1L.9 8.4v7.2l11.1 6.3 11.1-6.3V8.4L12 2.1zm8.8 13.3l-8.8 5-8.8-5V9.2l8.8-5 8.8 5v6.2zM12 12.6l-4.4-2.5v-5l4.4 2.5v5zm0 0l4.4-2.5v-5l-4.4 2.5v5zm0 0l-4.4 2.5v5l4.4-2.5v-5zm0 0l4.4 2.5v5l-4.4-2.5v-5z"/></svg>
+                        <img src="public/vmware.svg" alt="Logo do VMWare" class="w-16 h-16 mx-auto">
                     </div>
                     <!-- Logo 6: Fortinet -->
                     <div class="tech-logo" title="Fortinet">
-                        <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.1L.9 8.4v7.2l11.1 6.3 11.1-6.3V8.4L12 2.1zM12 19.8l-8.8-5V9.2l8.8 5v5.6zm0-7.2l-8.8-5 8.8-5 8.8 5-8.8 5z"/></svg>
+                        <img src="public/fortinet.svg" alt="Logo do Fortinet" class="w-16 h-16 mx-auto">
                     </div>
                 </div>
             </div>
@@ -192,13 +192,30 @@
         <section id="contato" class="py-20 animated-gradient-bg">
             <div class="container mx-auto px-6 text-center">
                 <h3 class="text-3xl md:text-4xl font-bold mb-4 text-white">Pronto para ter uma infraestrutura que pensa?</h3>
-                <p class="text-secondary-text max-w-2xl mx-auto mb-8">Vamos agendar uma conversa para entender seus desafios e desenhar uma solução tecnológica que coloque sua empresa à frente da concorrência.</p>
-                <a href="mailto:contato@thinkinfra.com.br" class="bg-gradient-to-r from-accent-blue to-accent-purple text-white font-bold py-4 px-10 rounded-lg text-lg hover:opacity-90 transition-opacity duration-300 transform hover:scale-105 shadow-lg shadow-accent-blue/20">
-                    Agende uma Conversa Estratégica
-                </a>
-            </div>
+                <p class="text-secondary-text max-w-2xl mx-auto mb-10">Vamos conversar sobre como nossas soluções podem impulsionar seu negócio. Escolha sua forma de contato preferida abaixo e dê o primeiro passo.</p>
+        
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+        
+                    <a href="mailto:jose@thinkinfra.com.br" 
+                       class="inline-flex items-center justify-center gap-3 w-full md:w-auto py-4 px-8 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-accent-blue to-accent-purple shadow-lg shadow-accent-blue/20 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span>Enviar um E-mail</span>
+                    </a>
+        
+                    <a href="https://wa.me/5543988072122" 
+                       target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center gap-3 w-full md:w-auto py-4 px-8 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-emerald-500 to-green-600 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.687-1.475L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        <span>Conversar no WhatsApp</span>
+                    </a>
+        
+                </div>
+                </div>
         </section>
-    </main>
 
     <!-- Rodapé -->
     <footer class="bg-background border-t border-surface py-8">
@@ -217,7 +234,7 @@
         <h3 id="modal-title" class="text-2xl font-bold gradient-text mb-4"></h3>
         <p id="modal-description" class="text-secondary-text mb-6"></p>
         <h4 class="text-lg font-semibold text-white mb-3">Principais Entregas:</h4>
-        <ul id="modal-item-list" class="space-y-2">
+        <ul id="modal-item-list" class="space-y-2 text-secondary-text">
             <!-- Itens da lista serão inseridos aqui pelo JavaScript -->
         </ul>
     </div>

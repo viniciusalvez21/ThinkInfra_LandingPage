@@ -7,7 +7,7 @@ html {
 }
 
 .animated-gradient-bg {
-    background: linear-gradient(-45deg, #1A1229, #211436, #1A1229, #0D1117);
+    background: linear-gradient(-45deg, #1A1229, #2E1C4B, #1A1229, #0D1117);
     background-size: 400% 400%;
     animation: gradient-animation 15s ease infinite;
 }
@@ -259,3 +259,65 @@ header::before {
         padding: 1.5rem;
     }
 }
+
+/* --- Estilos para os Botões de Contato --- */
+
+/* Container que alinha os botões */
+.botoes-contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha se não houver espaço */
+    margin-top: 2rem; /* Espaçamento do topo */
+  }
+  
+  /* Estilo base para ambos os botões */
+  .botao-contato {
+    display: inline-flex; /* Alinha o ícone e o texto */
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem; /* Espaçamento entre o ícone e o texto */
+    
+    padding: 0.8rem 1.6rem;
+    border-radius: 12px;
+    border: none;
+    
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .botao-contato:hover {
+    transform: translateY(-3px); /* Efeito de levantar */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Cor específica para o botão de E-mail */
+  .botao-contato.email {
+    background: linear-gradient(45deg, #2563EB, #5B21B6);
+  }
+  
+  /* Cor específica para o botão de WhatsApp */
+  .botao-contato.whatsapp {
+    background: linear-gradient(45deg, #16A34A, #166534);
+  }
+  
+  
+  /* --- Responsividade para Celular --- */
+  @media (max-width: 768px) {
+    .botoes-contato-container {
+      flex-direction: column; /* Coloca os botões um embaixo do outro */
+      align-items: stretch; /* Faz os botões ocuparem a mesma largura */
+      padding: 0 1rem; /* Adiciona um espaçamento nas laterais */
+    }
+  
+    .botao-contato {
+      width: 100%; /* Faz o botão ocupar toda a largura do container */
+    }
+  }
